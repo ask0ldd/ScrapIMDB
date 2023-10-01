@@ -20,9 +20,11 @@ async function run (){
 
     const movie = await page.evaluate(() => {
         return {
-            title : document.querySelector('h1 span').textContent,
-            genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text')).map(node => node.textContent),
+            title : document.querySelector('h1 span').textContent != null ? document.querySelector('h1 span').textContent != null : "",
+            genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent),
+            rating : document.querySelector('div[data-testid="hero-rating-bar__aggregate-rating__score"] span').textContent,
             plot : document.querySelector('span[data-testid="plot-xl"]').textContent,
+            episodes : document.querySelector('h3.ipc-title__text span').textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : ''
             // storyline : document.querySelector('section[data-testid="Storyline"]').innerHTML,
         }
 
