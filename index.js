@@ -3,6 +3,7 @@ const puppeeter = require('puppeteer')
 async function run (){
     const browser = await puppeeter.launch()
     const page = await browser.newPage()
+    page.setViewport({ width: 1440, height: 926 })
     
     // fake user agent
     await page.evaluateOnNewDocument(() => {
@@ -16,20 +17,25 @@ async function run (){
     await page.goto('https://www.imdb.com/title/tt1190634/')
 
     // const html = await page.content()
-    // await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) / can use page.pdf too
+    // scroll to make the storyline text appear
+    await page.evaluate('window.scrollTo(0, 8000)')
+    await page.waitForFunction(`document.body.scrollHeight > 7000`)
+    await page.waitForTimeout(3000)
+    await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
 
     const movie = await page.evaluate(() => {
         return {
-            title : document.querySelector('h1 span').textContent != null ? document.querySelector('h1 span').textContent != null : "",
-            genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent),
-            rating : document.querySelector('div[data-testid="hero-rating-bar__aggregate-rating__score"] span').textContent,
-            plot : document.querySelector('span[data-testid="plot-xl"]').textContent,
-            episodes : document.querySelector('h3.ipc-title__text span').textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : ''
-            // storyline : document.querySelector('section[data-testid="Storyline"]').innerHTML,
+            title : document.querySelector('h1 span')?.textContent || "",
+            genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent) || [],
+            rating : document.querySelector('div[data-testid="hero-rating-bar__aggregate-rating__score"] span')?.textContent || '',
+            plot : document.querySelector('span[data-testid="plot-xl"]')?.textContent || '',
+            episodes : document.querySelector('section[data-testid="Episodes"] h3.ipc-title__text span')?.textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : '',
+            storyline : document.querySelector('section[data-testid="Storyline"] .ipc-html-content-inner-div')?.textContent || '',
         }
 
     })
-    console.log(JSON.stringify(movie))
+    // console.log(JSON.stringify(movie))
+    console.log(movie.storyline)
 
     await browser.close()
 }
