@@ -21,7 +21,9 @@ async function run (){
     const movie = await page.evaluate(() => {
         return {
             title : document.querySelector('h1 span').textContent,
-            plot : document.querySelector('span[data-testid="plot-xl"]').textContent
+            genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text')).map(node => node.textContent),
+            plot : document.querySelector('span[data-testid="plot-xl"]').textContent,
+            // storyline : document.querySelector('section[data-testid="Storyline"]').innerHTML,
         }
 
     })
