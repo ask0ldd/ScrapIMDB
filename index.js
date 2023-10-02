@@ -26,6 +26,7 @@ async function run (){
     const movie = await page.evaluate(() => {
         return {
             title : document.querySelector('h1 span')?.textContent || "",
+            poster : document.querySelector('div[data-testid="hero-media__poster"] img')?.src || '',
             genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent) || [],
             rating : document.querySelector('div[data-testid="hero-rating-bar__aggregate-rating__score"] span')?.textContent || '',
             plot : document.querySelector('span[data-testid="plot-xl"]')?.textContent || '',
@@ -43,7 +44,8 @@ async function run (){
                     // needs a href too
                 })
             ) || [], 
-            userReviewsUrl : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
+            userReviewsPage : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
+            episodesPage : document.querySelector('section[data-testid="Episodes"] a')?.href || ''
         }
     })
 
