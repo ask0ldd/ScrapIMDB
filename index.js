@@ -21,7 +21,7 @@ async function run (){
     await page.evaluate('window.scrollTo(0, 8000)')
     await page.waitForFunction(`document.body.scrollHeight > 7000`)
     await page.waitForTimeout(2000)
-    await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
+    // await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
 
     const movie = await page.evaluate(() => {
         return {
@@ -78,11 +78,31 @@ async function run (){
         }
     )
 
+    // await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
 
+    await page.goto(movie.episodesPage)
+    await page.evaluate('window.scrollTo(0, 2000)')
+    await page.waitForFunction(`document.body.scrollHeight > 1800`)
+    await page.waitForTimeout(2000)
 
-    await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
+    // await page.screenshot({path : 'screenshots/theboys3.png', fullPage : true})
 
-    console.log(JSON.stringify(movie))
+    const season1 = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
+            {
+                pic : rowNode.querySelector('img')?.src || '',
+                episode : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[0] || '',
+                title : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[1] || '',
+                date : rowNode.querySelector('h4')?.nextElementSibling?.textContent || '',
+                plot : rowNode.querySelector('div.ipc-html-content-inner-div')?.textContent || '',
+                rating : rowNode.querySelector("svg.ipc-icon--star-inline")?.parentElement?.textContent || '',
+            }
+        )
+        )
+    })
+
+    // console.log(JSON.stringify(movie))
+    console.log(JSON.stringify(season1))
     // console.log(JSON.stringify(top20cast))
     // console.log(movie.storyline)
 
