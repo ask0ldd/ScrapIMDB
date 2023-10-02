@@ -31,6 +31,7 @@ async function run (){
             plot : document.querySelector('span[data-testid="plot-xl"]')?.textContent || '',
             episodes : document.querySelector('section[data-testid="Episodes"] h3.ipc-title__text span')?.textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : '',
             storyline : document.querySelector('section[data-testid="Storyline"] .ipc-html-content-inner-div')?.textContent || '',
+            creator :  document.querySelector('li[data-testid="title-pc-principal-credit"] ul li a')?.textContent || '',
             castLink : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
         }
     })
@@ -49,7 +50,7 @@ async function run (){
                     personalPage : allTD[1]?.querySelector('a')?.href || '',
                     portrait : allTD[0]?.querySelector('img').src || '',
                     character : allTD[3]?.querySelector('a')?.textContent?.replace('\n', '') || '',
-                    episodes : allTD[3]?.querySelector('.toggle-episodes')?.textContent || ''
+                    episodes : allTD[3]?.querySelector('.toggle-episodes')?.textContent?.replace('\n', '')?.trimEnd() || ''
                 }
             }
         })
