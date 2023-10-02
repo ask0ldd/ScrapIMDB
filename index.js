@@ -39,6 +39,7 @@ async function run (){
                     title: node.querySelector('span[data-testid="title"]')?.textContent || '', 
                     poster: node.querySelector('img.ipc-image')?.src || '',
                     rating: node.querySelector('span.ipc-rating-star')?.textContent || '',
+                    urlMovie: node.querySelector('a')?.href || '',
                     // needs a href too
                 })
             ) || [], 
