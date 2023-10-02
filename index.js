@@ -39,8 +39,10 @@ async function run (){
                     title: node.querySelector('span[data-testid="title"]')?.textContent || '', 
                     poster: node.querySelector('img.ipc-image')?.src || '',
                     rating: node.querySelector('span.ipc-rating-star')?.textContent || '',
+                    // needs a href too
                 })
-            ) || [], // needs a href too
+            ) || [], 
+            userReviewsUrl : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
         }
     })
 
