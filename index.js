@@ -33,6 +33,14 @@ async function run (){
             storyline : document.querySelector('section[data-testid="Storyline"] .ipc-html-content-inner-div')?.textContent || '',
             creator :  document.querySelector('li[data-testid="title-pc-principal-credit"] ul li a')?.textContent || '',
             castLink : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
+            photos : Array.from(document.querySelectorAll('section[data-testid="Photos"] div[data-testid="shoveler-items-container"] .ipc-image'), node => ({url : node.src, alt : node.alt})) || [], // needs a href too
+            relatedContent : Array.from(document.querySelectorAll('section[data-testid="MoreLikeThis"] div[data-testid="shoveler-items-container"]>div'), node => 
+                ({
+                    title: node.querySelector('span[data-testid="title"]')?.textContent || '', 
+                    poster: node.querySelector('img.ipc-image')?.src || '',
+                    rating: node.querySelector('span.ipc-rating-star')?.textContent || '',
+                })
+            ) || [], // needs a href too
         }
     })
 
@@ -70,7 +78,7 @@ async function run (){
     await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
 
     console.log(JSON.stringify(movie))
-    console.log(JSON.stringify(top20cast))
+    // console.log(JSON.stringify(top20cast))
     // console.log(movie.storyline)
 
     await browser.close()
