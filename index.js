@@ -31,11 +31,24 @@ async function run (){
             plot : document.querySelector('span[data-testid="plot-xl"]')?.textContent || '',
             episodes : document.querySelector('section[data-testid="Episodes"] h3.ipc-title__text span')?.textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : '',
             storyline : document.querySelector('section[data-testid="Storyline"] .ipc-html-content-inner-div')?.textContent || '',
+            castLink : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
         }
-
     })
-    // console.log(JSON.stringify(movie))
-    console.log(movie.storyline)
+
+    await page.goto(movie.castLink)
+    await page.evaluate('window.scrollTo(0, 2000)')
+    await page.waitForFunction(`document.body.scrollHeight > 1800`)
+    await page.waitForTimeout(3000)
+
+    const top20cast = await page.evaluate(() => {
+        return document.querySelectorAll('table.cast_list .odd, table.cast_list .even')
+    })
+
+    await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
+
+    console.log(JSON.stringify(movie))
+    console.log(JSON.stringify(top20cast))
+    // console.log(movie.storyline)
 
     await browser.close()
 }
