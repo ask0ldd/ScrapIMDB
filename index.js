@@ -40,9 +40,29 @@ async function run (){
     await page.waitForFunction(`document.body.scrollHeight > 1800`)
     await page.waitForTimeout(3000)
 
-    const top20cast = await page.evaluate(() => {
-        return document.querySelectorAll('table.cast_list .odd, table.cast_list .even')
+    const castWithParasiticNulls = await page.evaluate(() => {
+        return Array.from(document.querySelectorAll('table.cast_list .odd, table.cast_list .even'), rowNode => {
+            if(rowNode.querySelectorAll('td')[1]?.querySelector('a')?.textContent!=null) {
+                const allTD = rowNode.querySelectorAll('td')
+                return { 
+                    name : allTD[1]?.querySelector('a')?.textContent?.replace('\n', '') || '',
+                    portrait : allTD[0]?.querySelector('img').src || '',
+
+                }
+            }
+        })
     })
+
+    let correctedIndex = 0
+    const top20cast = castWithParasiticNulls.filter((el) => { 
+            if(el != null && correctedIndex < 20 ) {
+                correctedIndex++
+                return el
+            }
+        }
+    )
+
+
 
     await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
 
