@@ -20,7 +20,7 @@ async function run (){
     // scroll to make the storyline text appear
     await page.evaluate('window.scrollTo(0, 8000)')
     await page.waitForFunction(`document.body.scrollHeight > 7000`)
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(2000)
     await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
 
     const movie = await page.evaluate(() => {
@@ -38,7 +38,7 @@ async function run (){
     await page.goto(movie.castLink)
     await page.evaluate('window.scrollTo(0, 2000)')
     await page.waitForFunction(`document.body.scrollHeight > 1800`)
-    await page.waitForTimeout(3000)
+    await page.waitForTimeout(2000)
 
     const castWithParasiticNulls = await page.evaluate(() => {
         return Array.from(document.querySelectorAll('table.cast_list .odd, table.cast_list .even'), rowNode => {
@@ -46,8 +46,10 @@ async function run (){
                 const allTD = rowNode.querySelectorAll('td')
                 return { 
                     name : allTD[1]?.querySelector('a')?.textContent?.replace('\n', '') || '',
+                    personalPage : allTD[1]?.querySelector('a')?.href || '',
                     portrait : allTD[0]?.querySelector('img').src || '',
-
+                    character : allTD[3]?.querySelector('a')?.textContent?.replace('\n', '') || '',
+                    episodes : allTD[3]?.querySelector('.toggle-episodes')?.textContent || ''
                 }
             }
         })
