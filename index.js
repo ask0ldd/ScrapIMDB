@@ -87,8 +87,9 @@ async function run (){
 
     // await page.screenshot({path : 'screenshots/theboys3.png', fullPage : true})
 
-    const season1 = await page.evaluate(() => {
-        return Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
+    const { season1, allSeasonsClickableButtons } = await page.evaluate(() => {
+        return { 
+            season1 : Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
             {
                 pic : rowNode.querySelector('img')?.src || '',
                 episode : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[0] || '',
@@ -96,9 +97,9 @@ async function run (){
                 date : rowNode.querySelector('h4')?.nextElementSibling?.textContent || '',
                 plot : rowNode.querySelector('div.ipc-html-content-inner-div')?.textContent || '',
                 rating : rowNode.querySelector("svg.ipc-icon--star-inline")?.parentElement?.textContent || '',
+            })),
+            allSeasonsClickableButtons : Array.from(document.querySelectorAll('.ipc-page-section--base ul li'), button => button),
             }
-        )
-        )
     })
 
     // console.log(JSON.stringify(movie))
