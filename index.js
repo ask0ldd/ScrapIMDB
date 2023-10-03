@@ -135,12 +135,18 @@ async function run (){
     if(seasons[seasons.length-1][0].plot === "") seasons.pop()
 
     await page.goto(photoGalleryUrl)
-    await page.evaluate('window.scrollTo(0, 2000)')
-    await page.waitForFunction(`document.body.scrollHeight > 1800`)
+    /*await page.evaluate('window.scrollTo(0, 2000)')
+    await page.waitForFunction(`document.body.scrollHeight > 1800`)*/
     await page.waitForTimeout(2000)
 
-    const nextButton = await page.evaluate(() => document.querySelector('div[aria-label="Next"]'))
+    // const nextButton = await page.evaluate(() => document.querySelector('div[aria-label="Next"]'))
     
+    for(let i=0; i<12; i++){
+        const imgSrc = await page.evaluate(() => document.querySelector('div[data-testid="media-viewer"] img')?.src)
+        movie.photos[i] = {...movie.photos[i], fullPicUrl : imgSrc}
+        page.click('div[aria-label="Next"]')
+        await page.waitForTimeout(1000)
+    }
 
     // console.log(JSON.stringify(movie))
     // console.log(JSON.stringify(seasons))
