@@ -16,6 +16,7 @@ async function run (){
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0')
 
     const tvshowUrl = 'https://www.imdb.com/title/tt1190634/'
+    const photoGalleryUrl = 'https://www.imdb.com/title/tt1190634/mediaviewer'
     await page.goto(tvshowUrl)
 
     // const html = await page.content()
@@ -132,6 +133,14 @@ async function run (){
 
     // get rid of last season if not broadcasted yet
     if(seasons[seasons.length-1][0].plot === "") seasons.pop()
+
+    await page.goto(photoGalleryUrl)
+    await page.evaluate('window.scrollTo(0, 2000)')
+    await page.waitForFunction(`document.body.scrollHeight > 1800`)
+    await page.waitForTimeout(2000)
+
+    const nextButton = await page.evaluate(() => document.querySelector('div[aria-label="Next"]'))
+    
 
     // console.log(JSON.stringify(movie))
     // console.log(JSON.stringify(seasons))
