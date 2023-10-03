@@ -89,6 +89,7 @@ async function run (){
 
     // await page.screenshot({path : 'screenshots/theboys3.png', fullPage : true})
 
+    // retrieve season 1 and the number of seasons broadcasted or announced by the channel
     const { seasons, nSeasons } = await page.evaluate(() => {
         return { 
             seasons : [ Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
@@ -104,6 +105,7 @@ async function run (){
         }
     })
 
+    // if more than one seasons, retrieve datas for all of them
     if(nSeasons > 1)
     for(let i = 2; i<=nSeasons; i++){
         await page.goto(tvshowUrl + 'episodes/?season='+i)
@@ -123,12 +125,16 @@ async function run (){
         )
     }
 
+    // get rid of last season if not broadcasted yet
+    if(seasons[seasons.length-1][0].plot === "") seasons.pop()
+
     // console.log(JSON.stringify(movie))
-    console.log(JSON.stringify(seasons))
-    console.log(JSON.stringify(nSeasons))
+    // console.log(JSON.stringify(seasons))
+    // console.log(JSON.stringify(nSeasons))
     // console.log(JSON.stringify(top20cast))
     // console.log(movie.storyline)
 
+    // write the formatted json
     fs.writeFile('theboys.json', JSON.stringify({ movie : movie, seasons : seasons }, null, 4), err => { if (err) { console.error(err) } });
 
     await browser.close()
