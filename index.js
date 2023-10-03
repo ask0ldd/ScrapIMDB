@@ -35,14 +35,20 @@ async function run (){
             episodes : document.querySelector('section[data-testid="Episodes"] h3.ipc-title__text span')?.textContent === 'Episodes' ? document.querySelector('h3.ipc-title__text span').nextElementSibling.textContent : '',
             storyline : document.querySelector('section[data-testid="Storyline"] .ipc-html-content-inner-div')?.textContent || '',
             creator :  document.querySelector('li[data-testid="title-pc-principal-credit"] ul li a')?.textContent || '',
-            castLink : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
-            photos : Array.from(document.querySelectorAll('section[data-testid="Photos"] div[data-testid="shoveler-items-container"] .ipc-image'), node => ({url : node.src, alt : node.alt})) || [], // needs a href too
+            castListPage : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
+            photos : Array.from(document.querySelectorAll('section[data-testid="Photos"] div[data-testid="shoveler-items-container"] .ipc-image'), node => 
+            ({
+                miniatureUrl : node?.src || '', 
+                alt : node?.alt || '',
+                mediaViewerPage : node.parentElement?.nextSibling?.href || '',
+            })
+            ) || [], // needs a href too
             relatedContent : Array.from(document.querySelectorAll('section[data-testid="MoreLikeThis"] div[data-testid="shoveler-items-container"]>div'), node => 
                 ({
                     title: node.querySelector('span[data-testid="title"]')?.textContent || '', 
                     poster: node.querySelector('img.ipc-image')?.src || '',
                     rating: node.querySelector('span.ipc-rating-star')?.textContent || '',
-                    urlMovie: node.querySelector('a')?.href || '',
+                    contentPage: node.querySelector('a')?.href || '',
                     // needs a href too
                 })
             ) || [], 
