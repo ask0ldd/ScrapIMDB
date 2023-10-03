@@ -49,7 +49,6 @@ async function run (){
                     poster: node.querySelector('img.ipc-image')?.src || '',
                     rating: node.querySelector('span.ipc-rating-star')?.textContent || '',
                     contentPage: node.querySelector('a')?.href || '',
-                    // needs a href too
                 })
             ) || [], 
             userReviewsPage : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
@@ -57,7 +56,7 @@ async function run (){
         }
     })
 
-    await page.goto(movie.castLink)
+    await page.goto(movie.castListPage)
     await page.evaluate('window.scrollTo(0, 2000)')
     await page.waitForFunction(`document.body.scrollHeight > 1800`)
     await page.waitForTimeout(2000)
