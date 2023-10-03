@@ -1,0 +1,415 @@
+{
+    "movie": {
+        "title": "The Boys",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UY281_CR11,0,190,281_.jpg",
+        "genres": [
+            "Action",
+            "Comedy",
+            "Crime",
+            "violence",
+            "gore",
+            "blood",
+            "enhancement drug",
+            "corporate marketing",
+            "69 more"
+        ],
+        "rating": "8.7",
+        "plot": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
+        "episodes": "32",
+        "storyline": "\"The Boys\" is set in a universe in which superpowered people are recognized as heroes by the general public and owned by a powerful corporation, Vought International, which ensures that they are aggressively marketed and monetized. Outside of their heroic personas, most are arrogant and corrupt. The series primarily focuses on two groups: the titular Boys, vigilantes looking to keep the corrupted heroes under control, and the Seven, Vought International's premier superhero team. The Boys are led by Billy Butcher, who despises all superpowered people, and the Seven are led by the egotistical and unstable Homelander. As a conflict ensues between the two groups, the series also follows the new members of each team: Hugh \"Hughie\" Campbell of the Boys, who joins the vigilantes after his girlfriend is killed in a high-speed collision by the Seven's A-Train, and Annie January/Starlight of the Seven, a hopeful young heroine forced to face the truth about the heroes she admires.",
+        "creator": "Eric Kripke",
+        "castLink": "https://www.imdb.com/title/tt1190634/fullcredits/writer?ref_=tt_ov_wr_sm",
+        "photos": [
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BYTFkMGI2NTEtNDhlMS00NTFiLThmYTQtNmI3YTVlZDE4ZGUwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Karl Urban in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BYjI1NTQ3OTUtNmFjZS00MGMwLWFlNzItYjM0NjMzYTAwODcxXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX140_CR0,0,140,140_.jpg",
+                "alt": "Susan Heyward in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BMzdiOTk2M2ItZTJhYi00YTUyLThmODUtYzUyMzM4NGZhYzMyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX140_CR0,0,140,140_.jpg",
+                "alt": "Valorie Curry in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BYTA3OTkxOTUtYzRlMi00NDZiLWFkOGEtM2I4MzZmOTIxZTRhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Jensen Ackles in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BYWZhMGM2NWQtN2EyNi00NjY4LTkzMjUtZDBjZjk3OTRhNGEyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Dominique McElligott in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BM2MxN2NhZDAtNzNkNy00NTc2LTg4YzAtYTMwMzEyZGEyMTRkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Erin Moriarty in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BZGFiNDhjODYtODk2NC00NzcxLWE4OTktM2NhNzFhMWFkYTdiXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Karl Urban and Cameron Crovetti in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BOWJiNjVlNjItMGViYy00NmEwLWI5Y2MtMmFlYWVjOTBhYjc3XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Christian Keyes and Jessie T. Usher in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BYWMyYTNlNzgtZWY3OS00N2ExLWFiZDktMTk2MDMxYzk1MzQ0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Karl Urban and Antony Starr in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BZjIyNjVmNjktZTFmNC00ZDkxLTlhZjktNGY1MzY3NmIyZjcyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Claudia Doumit in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BODQ0NTBkNDQtNDA3OS00NDcyLTlhMzktOGUzN2EwODliOTNmXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Jensen Ackles and Jack Quaid in The Boys (2019)"
+            },
+            {
+                "url": "https://m.media-amazon.com/images/M/MV5BNmJjYzEzNjQtMzVkOS00ODM3LTk2NzgtZmRmODgxNWRjNTRhXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY140_CR35,0,140,140_.jpg",
+                "alt": "Chace Crawford and Colby Minifie in The Boys (2019)"
+            }
+        ],
+        "relatedContent": [
+            {
+                "title": "Stranger Things",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDZkYmVhNjMtNWU4MC00MDQxLWE3MjYtZGMzZWI1ZjhlOWJmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UY207_CR13,0,140,207_.jpg",
+                "rating": "8.7",
+                "urlMovie": "https://www.imdb.com/title/tt4574334/?ref_=tt_sims_tt_i_1"
+            },
+            {
+                "title": "Breaking Bad",
+                "poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "9.5",
+                "urlMovie": "https://www.imdb.com/title/tt0903747/?ref_=tt_sims_tt_i_2"
+            },
+            {
+                "title": "Invincible",
+                "poster": "https://m.media-amazon.com/images/M/MV5BNWYwYjAyMzgtNzQyNC00M2JiLWI2ZTQtNzRmZThmOTk4NmRmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg",
+                "rating": "8.7",
+                "urlMovie": "https://www.imdb.com/title/tt6741278/?ref_=tt_sims_tt_i_3"
+            },
+            {
+                "title": "Game of Thrones",
+                "poster": "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "9.2",
+                "urlMovie": "https://www.imdb.com/title/tt0944947/?ref_=tt_sims_tt_i_4"
+            },
+            {
+                "title": "Peaky Blinders",
+                "poster": "https://m.media-amazon.com/images/M/MV5BNTA1MGFmMDQtYWQxMS00NDY3LWExOGItYWE5MWI4NWM0YjllXkEyXkFqcGdeQXVyMTA0MDM3NDg4._V1_QL75_UY207_CR13,0,140,207_.jpg",
+                "rating": "8.8",
+                "urlMovie": "https://www.imdb.com/title/tt2442560/?ref_=tt_sims_tt_i_5"
+            },
+            {
+                "title": "The Office",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "9.0",
+                "urlMovie": "https://www.imdb.com/title/tt0386676/?ref_=tt_sims_tt_i_6"
+            },
+            {
+                "title": "Rick et Morty",
+                "poster": "https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "9.1",
+                "urlMovie": "https://www.imdb.com/title/tt2861424/?ref_=tt_sims_tt_i_7"
+            },
+            {
+                "title": "Gen V",
+                "poster": "https://m.media-amazon.com/images/M/MV5BMGYxOWMxNjMtNjE3Mi00YTRjLTlkZWUtNDk4NzBkMWEyYWE0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UY207_CR3,0,140,207_.jpg",
+                "rating": "8.1",
+                "urlMovie": "https://www.imdb.com/title/tt13159924/?ref_=tt_sims_tt_i_8"
+            },
+            {
+                "title": "Better Call Saul",
+                "poster": "https://m.media-amazon.com/images/M/MV5BZDA4YmE0OTYtMmRmNS00Mzk2LTlhM2MtNjk4NzBjZGE1MmIyXkEyXkFqcGdeQXVyMTMzNDExODE5._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "9.0",
+                "urlMovie": "https://www.imdb.com/title/tt3032476/?ref_=tt_sims_tt_i_9"
+            },
+            {
+                "title": "The Walking Dead",
+                "poster": "https://m.media-amazon.com/images/M/MV5BY2U5MzE0NDYtMjgxZi00ZjMyLWFlN2UtZGI3YzQ5OGZiMjcyXkEyXkFqcGdeQXVyMTYzMDM0NTU@._V1_QL75_UX140_CR0,0,140,207_.jpg",
+                "rating": "8.1",
+                "urlMovie": "https://www.imdb.com/title/tt1520211/?ref_=tt_sims_tt_i_10"
+            },
+            {
+                "title": "Supernatural",
+                "poster": "https://m.media-amazon.com/images/M/MV5BNzRmZWJhNjUtY2ZkYy00N2MyLWJmNTktOTAwY2VkODVmOGY3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX140_CR0,1,140,207_.jpg",
+                "rating": "8.4",
+                "urlMovie": "https://www.imdb.com/title/tt0460681/?ref_=tt_sims_tt_i_11"
+            },
+            {
+                "title": "The Mandalorian",
+                "poster": "https://m.media-amazon.com/images/M/MV5BN2M5YWFjN2YtYzU2YS00NzBlLTgwZWUtYWQzNWFhNDkyYjg3XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UX140_CR0,0,140,207_.jpg",
+                "rating": "8.7",
+                "urlMovie": "https://www.imdb.com/title/tt8111088/?ref_=tt_sims_tt_i_12"
+            }
+        ],
+        "userReviewsPage": "https://www.imdb.com/title/tt1190634/reviews?ref_=tt_urv",
+        "episodesPage": "https://www.imdb.com/title/tt1190634/episodes?ref_=tt_eps_sm"
+    },
+    "seasons": [
+        [
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZDg2YjZmODItOGQ4OS00NzIxLWI5MGEtMGM0ZGNiMmEzMWFjXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S1.E1",
+                "title": "The Name of the Game",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "When a Supe kills the love of his life, A/V salesman Hughie Campbell teams up with Billy Butcher, a vigilante hell-bent on punishing corrupt Supes -- and Hughie's life will never be the same again.",
+                "rating": "8.7/10 (17K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BYzU1ZWNjZjktOGFlNy00ZmVkLWFkYjQtYjVhZWMxZDUxZmRkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S1.E2",
+                "title": "Cherry",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "The Boys get themselves a Superhero, Starlight gets payback, Homelander gets naughty, and a Senator gets naughtier.",
+                "rating": "8.5/10 (15K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BNWZlNjAwYjYtYzk0Ny00ZjkzLTk0ZGItMzY1ZmJjMTlhYTM4XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S1.E3",
+                "title": "Get Some",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "It's the race of the century. A-Train versus Shockwave, vying for the title of World's Fastest Man. Meanwhile, the Boys are reunited and it feels so good.",
+                "rating": "8.3/10 (14K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BOTJjODUwNWQtMDg0Mi00NGY5LWEyNzktNDFiYjNlNmE1MWZhXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S1.E4",
+                "title": "The Female of the Species",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "On a very special episode of The Boys... an hour of guts, gutterballs, airplane hijackings, madness, ghosts, and one very intriguing Female. Oh, and lots of heart -- both in the sentimental sense, and in the gory literal sense.",
+                "rating": "8.7/10 (14K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BMmM5N2IxMWEtYWRkNC00MzdmLTk4ZDgtYzZiOWZjMDRkZTJhXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S1.E5",
+                "title": "Good for the Soul",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "The Boys head to the \"Believe\" Expo to follow a promising lead in their ongoing war against the Supes. There might -- MIGHT -- be a homicidal infant, but you'll have to see for yourself.",
+                "rating": "8.4/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BMjY5ZDUyNmMtNWRlMS00YjJlLWJiODEtNjE3NjM3YWFjZGZiXkEyXkFqcGdeQXVyNzgxMzc3OTc@._V1_QL75_UY281_CR81,0,500,281_.jpg",
+                "episode": "S1.E6",
+                "title": "The Innocents",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "SUPER IN AMERICA (2019). Vought Studios. Genre: Reality. Starring: Homelander, Queen Maeve, Black Noir, The Deep, A-Train, Starlight, Tara Reid, Billy Zane.",
+                "rating": "8.1/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BYzQzMmMwMGUtNjUzZi00MDc2LTk2OTItMDg1MTVjOWMzYTQxXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_QL75_UX500_CR0,47,500,281_.jpg",
+                "episode": "S1.E7",
+                "title": "The Self-Preservation Society",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "Never trust a washed-up Supe -- the Boys learn this lesson the hard way. Meanwhile, Homelander digs into his past, Starlight discovers that love hurts, and if you're ever in Sandusky, Ohio and a girl asks if she can touch your gills, say NO.",
+                "rating": "8.7/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZDk5OWJlNDQtMDYzZi00MzlhLWFkYjAtMjU5OWZkNzliZTYyXkEyXkFqcGdeQXVyMjI4OTg3MTc@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+                "episode": "S1.E8",
+                "title": "You Found Me",
+                "date": "Fri, Jul 26, 2019",
+                "plot": "Season Finale Time! Questions answered! Secrets revealed! Conflicts... conflicted! Characters exploded! And so much more!",
+                "rating": "9.0/10 (15K)"
+            }
+        ],
+        [
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZDM5MGMxZTAtYjQ1Ni00M2JiLWJhOTUtMWNkYjFiYTA5OTliXkEyXkFqcGdeQXVyNTgyNDM1OTU@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S2.E1",
+                "title": "The Big Ride",
+                "date": "Fri, Sep 4, 2020",
+                "plot": "With Butcher still missing, Hughie, Mother's Milk, Frenchie, and Kimiko are now fugitives, and Homelander and Vought are more powerful than ever. But just as the Boys are about to leave the country, they are pulled back into the fray.",
+                "rating": "8.1/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BNmNiMTQ1NWUtNjQ3Yi00ZDdiLWFkZjgtNjhlNWMwYTJkNDY3XkEyXkFqcGdeQXVyNTgyNDM1OTU@._V1_QL75_UX500_CR0,31,500,281_.jpg",
+                "episode": "S2.E2",
+                "title": "Proper Preparation and Planning",
+                "date": "Fri, Sep 4, 2020",
+                "plot": "Butcher is back with the Boys, but tensions flare with Hughie. Homelander spends quality time with his new \"family.\" Starlight and Stormfront bond at a press junket and the Boys hunt down a super terrorist with a startling identity.",
+                "rating": "7.7/10 (12K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BMDU4YmE5NDItYTgwYS00NTBlLTg1MDQtMmYyMWFmN2YwNDQyXkEyXkFqcGdeQXVyMjA4MDAzNTg@._V1_QL75_UX500_CR0,109,500,281_.jpg",
+                "episode": "S2.E3",
+                "title": "Over the Hill with the Swords of a Thousand Men",
+                "date": "Fri, Sep 4, 2020",
+                "plot": "The Boys take to the high seas to safeguard their prisoner. Homelander plays house, then pushes Ryan over the edge. Starlight is forced to make an impossible choice. Stormfront reveals her true character.",
+                "rating": "9.0/10 (14K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZGU1ZWVmY2QtY2UzMS00MzUyLWFlYWMtZGEyNTQ3NGQxMjc0XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S2.E4",
+                "title": "Nothing Like It in the World",
+                "date": "Fri, Sep 11, 2020",
+                "plot": "Milk, Hughie, and Annie go on a road trip to find Liberty. Frenchie has relationship problems, and Homelander continues to unravel.",
+                "rating": "8.0/10 (12K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BYjA1YjJiYmYtZWQxNS00Yzg2LWI1ZDItNjgwYTVkMzIwMTE1XkEyXkFqcGdeQXVyOTQxNzU1MQ@@._V1_QL75_UY281_CR26,0,500,281_.jpg",
+                "episode": "S2.E5",
+                "title": "We Gotta Go Now",
+                "date": "Fri, Sep 18, 2020",
+                "plot": "Butcher has no more intentions to fight with Supes but Black Noir traced his location and found him: what will he do now? Supes are shooting a film named - #Dawn Of The Seven. Homelander is doing what Stormfront told him to do.",
+                "rating": "8.3/10 (12K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BOWRjNjM5MDAtNTA0Yy00MjEyLWE3ZjYtZjNjNTg2OTA5MTFhXkEyXkFqcGdeQXVyNTgyNDM1OTU@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S2.E6",
+                "title": "The Bloody Doors Off",
+                "date": "Fri, Sep 25, 2020",
+                "plot": "When The Boys and Starlight follow a lead to Vought's mysterious Sage Grove Center, they find one of Vought's darkest secrets - and someone even darker from their past. Meanwhile Homelander and Stormfront's relationship deepens.",
+                "rating": "8.9/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BMjE4ZTUyYjItMzhjYS00YjhlLWI5NDUtZTJlZjlkMDQzMDllXkEyXkFqcGdeQXVyNTQ0NjQzNTE@._V1_QL75_UX500_CR0,109,500,281_.jpg",
+                "episode": "S2.E7",
+                "title": "Butcher, Baker, Candlestick Maker",
+                "date": "Fri, Oct 2, 2020",
+                "plot": "To help Victoria Neuman make a case against Vought, Mallory and The Boys look to an unlikely source for answers. Hughie gets terrifying news about Starlight. Meanwhile, Homelander and Stormfront further their master plan for Compound V.",
+                "rating": "9.0/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BOGI0ODg3NTQtZGExMC00NzcyLWExZGUtODJmNDBmMDE5MGYyXkEyXkFqcGdeQXVyMDA5MDM3Mw@@._V1_QL75_UY281_CR87,0,500,281_.jpg",
+                "episode": "S2.E8",
+                "title": "What I Know",
+                "date": "Fri, Oct 9, 2020",
+                "plot": "Becca shows up on Butcher's doorstep and begs for his help. The Boys agree to back Butcher, and together with Starlight, they finally face off against Homelander and Stormfront. But things go very bad, very fast.",
+                "rating": "9.4/10 (19K)"
+            }
+        ],
+        [
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BYTkxMzRkOGEtNmNhZi00N2NkLTk0NDgtODNkNzFjOGM4OGRmXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+                "episode": "S3.E1",
+                "title": "Payback",
+                "date": "Fri, Jun 3, 2022",
+                "plot": "One year following Stormfront's public controversy, Butcher and the Boys now work as contractors for Neuman's Bureau of Superhero Affairs in order to apprehend problematic Supes, with Hughie acting as their liaison.",
+                "rating": "8.3/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BODUzYTM2YjYtZmI5Mi00YjUyLWFhMDctNmUyYmJiNGRmODc1XkEyXkFqcGdeQXVyODMyNTM0MjM@._V1_QL75_UY281_CR86,0,500,281_.jpg",
+                "episode": "S3.E2",
+                "title": "The Only Man in the Sky",
+                "date": "Fri, Jun 3, 2022",
+                "plot": "Homelander, America's greatest Supe. Defending our shores from sea to shining sea. Today, America honors him on his birthday. Vought Shopping Network is celebrating by offering an exclusive Homelander Limited Birthday Edition Gold Coin.",
+                "rating": "8.6/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BNjlkMzg0ZjAtYjg3Mi00MTY1LWI0NzEtODRkZGI0MWU1ZmYxXkEyXkFqcGdeQXVyNzc0NDIwMjA@._V1_QL75_UY281_CR32,0,500,281_.jpg",
+                "episode": "S3.E3",
+                "title": "Barbary Coast",
+                "date": "Fri, Jun 3, 2022",
+                "plot": "Tonight at 9/8C on Vought Plus, it's the season finale of #AmericanHero. Three contestants remain, but only TWO will join #TheSeven. Will Starlight choose her old flame Supersonic? Or will someone else be moving into the Seven Tower?",
+                "rating": "8.2/10 (12K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BYjgwODBkOTQtMjlkZS00MDk1LTlhNTMtOWNmZjMxZmE3ZGU5XkEyXkFqcGdeQXVyMTI0ODIyODU4._V1_QL75_UX500_CR0,23,500,281_.jpg",
+                "episode": "S3.E4",
+                "title": "Glorious Five Year Plan",
+                "date": "Fri, Jun 10, 2022",
+                "plot": "The Boys search for a mysterious weapon in Russia while things are brewing behind the scenes at Vought. Plenty of trouble, gore and twists to foresee.",
+                "rating": "8.9/10 (13K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BNWI5YjFkOTYtNDMyNy00YjdlLWEzZWItNzIyM2I0OWE0OTc5XkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S3.E5",
+                "title": "The Last Time to Look on This World of Lies",
+                "date": "Fri, Jun 17, 2022",
+                "plot": "The Boys run into a major obstacle in their mission to stop the Seven and turn their attention to Soldier Boy. Homelander continues to make changes that fit his agenda at Vought International.",
+                "rating": "8.3/10 (12K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BMGM0YzU1MDEtYmI5OS00OTU2LThkYTMtZGVlNjlkZWQxMTUwXkEyXkFqcGdeQXVyMTI0ODIyODU4._V1_QL75_UX500_CR0,25,500,281_.jpg",
+                "episode": "S3.E6",
+                "title": "Herogasm",
+                "date": "Fri, Jun 24, 2022",
+                "plot": "You’re invited to the 70th Annual Herogasm! You must present this invitation in order to be admitted! Same rules as always: no cameras, no non-Supe guests unless they sign an NDA and they’re DTF, and no telling any news media! It’s BYOD, but food, alcohol and lube will be provided! And please remember to RSVP so we can get an accurate headcount for the caterer!",
+                "rating": "9.6/10 (32K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BODQ0NTBkNDQtNDA3OS00NDcyLTlhMzktOGUzN2EwODliOTNmXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX500_CR0,26,500,281_.jpg",
+                "episode": "S3.E7",
+                "title": "Here Comes a Candle to Light You to Bed",
+                "date": "Fri, Jul 1, 2022",
+                "plot": "Everything's changing as never expected for the Homelander. Soldier Boy is searching for the other old payback members to slay. Black Noir recollects what has really got him to the current situation.",
+                "rating": "8.8/10 (14K)"
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZGZkNzk4NzktODBlMS00NDIyLWE1ZDItYzYyODU0ZWUxM2MwXkEyXkFqcGdeQXVyMTAyMTU2OTc2._V1_QL75_UY281_CR87,0,500,281_.jpg",
+                "episode": "S3.E8",
+                "title": "The Instant White-Hot Wild",
+                "date": "Fri, Jul 8, 2022",
+                "plot": "Calling all patriots! Let's show Homelander we've got his back and we're not going to let Starlight and her House of Horrors get away with trafficking children and drinking their adrenaline! It's time for real Americans to fight back! Join the Hometeamers and Stormchasers tomorrow at Vought Square! Stand back and stand by!",
+                "rating": "8.2/10 (17K)"
+            }
+        ],
+        [
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E1",
+                "title": "Episode #4.1",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E2",
+                "title": "Episode #4.2",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E3",
+                "title": "Episode #4.3",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E4",
+                "title": "Episode #4.4",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E5",
+                "title": "Episode #4.5",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E6",
+                "title": "Episode #4.6",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E7",
+                "title": "Episode #4.7",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            },
+            {
+                "pic": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UX500_CR0,193,500,281_.jpg",
+                "episode": "S4.E8",
+                "title": "Episode #4.8",
+                "date": "",
+                "plot": "",
+                "rating": ""
+            }
+        ]
+    ]
+}

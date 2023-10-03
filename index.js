@@ -1,4 +1,5 @@
 const puppeeter = require('puppeteer')
+const fs = require('fs');
 
 async function run (){
     const browser = await puppeeter.launch()
@@ -14,7 +15,8 @@ async function run (){
     })
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0')
 
-    await page.goto('https://www.imdb.com/title/tt1190634/')
+    const tvshowUrl = 'https://www.imdb.com/title/tt1190634/'
+    await page.goto(tvshowUrl)
 
     // const html = await page.content()
     // scroll to make the storyline text appear
@@ -102,11 +104,32 @@ async function run (){
         }
     })
 
+    if(nSeasons > 1)
+    for(let i = 2; i<=nSeasons; i++){
+        await page.goto(tvshowUrl + 'episodes/?season='+i)
+        await page.waitForTimeout(2000)
+        seasons.push(
+            await page.evaluate(() => (
+                Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
+                    {
+                        pic : rowNode.querySelector('img')?.src || '',
+                        episode : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[0] || '',
+                        title : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[1] || '',
+                        date : rowNode.querySelector('h4')?.nextElementSibling?.textContent || '',
+                        plot : rowNode.querySelector('div.ipc-html-content-inner-div')?.textContent || '',
+                        rating : rowNode.querySelector("svg.ipc-icon--star-inline")?.parentElement?.textContent || '',
+                    }))
+            ))
+        )
+    }
+
     // console.log(JSON.stringify(movie))
     console.log(JSON.stringify(seasons))
     console.log(JSON.stringify(nSeasons))
     // console.log(JSON.stringify(top20cast))
     // console.log(movie.storyline)
+
+    fs.writeFile('theboys.json', JSON.stringify({ movie : movie, seasons : seasons }, null, 4), err => { if (err) { console.error(err) } });
 
     await browser.close()
 }
