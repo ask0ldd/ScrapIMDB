@@ -87,9 +87,9 @@ async function run (){
 
     // await page.screenshot({path : 'screenshots/theboys3.png', fullPage : true})
 
-    const { season1, allSeasonsClickableButtons } = await page.evaluate(() => {
+    const { seasons, nSeasons } = await page.evaluate(() => {
         return { 
-            season1 : Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
+            seasons : [ Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
             {
                 pic : rowNode.querySelector('img')?.src || '',
                 episode : rowNode.querySelector('h4 a')?.textContent.split(' ∙ ')[0] || '',
@@ -97,13 +97,14 @@ async function run (){
                 date : rowNode.querySelector('h4')?.nextElementSibling?.textContent || '',
                 plot : rowNode.querySelector('div.ipc-html-content-inner-div')?.textContent || '',
                 rating : rowNode.querySelector("svg.ipc-icon--star-inline")?.parentElement?.textContent || '',
-            })),
-            allSeasonsClickableButtons : Array.from(document.querySelectorAll('.ipc-page-section--base ul li'), button => button),
-            }
+            })) ],
+            nSeasons : Array.from(document.querySelectorAll('li[data-testid="tab-season-entry"]')).length,
+        }
     })
 
     // console.log(JSON.stringify(movie))
-    console.log(JSON.stringify(season1))
+    console.log(JSON.stringify(seasons))
+    console.log(JSON.stringify(nSeasons))
     // console.log(JSON.stringify(top20cast))
     // console.log(movie.storyline)
 
