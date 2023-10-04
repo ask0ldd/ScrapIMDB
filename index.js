@@ -171,19 +171,19 @@ async function run (){
     await page.waitForFunction(`document.body.scrollHeight > 7000`)
     await page.waitForTimeout(3000)
 
-    const review = await page.evaluate(() => Array.from(document.querySelectorAll('.review-container'), () => {
-        return {
-            title : ,
-            rating : ,
-            review : ,
-            user : ,
-            date : ,
-        }
-    })
+    const reviews = await page.evaluate(() => Array.from(document.querySelectorAll('.review-container'), reviewContainer => {
+            return {
+                title : reviewContainer.querySelector('a.title')?.textContent?.trim() || '',
+                rating : reviewContainer.querySelector('span.point-scale')?.previousElementSibling?.textContent || '',
+                review : reviewContainer.querySelector('div.content div')?.textContent || '',
+                user : reviewContainer.querySelector('span.display-name-link a')?.textContent || '',
+                date : reviewContainer.querySelector('span.review-date')?.textContent || '',
+            }
+        })
     )
 
     // writes the movies datas as a formatted json file
-    fs.writeFile('theboys.json', JSON.stringify({ movie : movie, seasons : seasons }, null, 4), err => { if (err) { console.error(err) } });
+    fs.writeFile('theboys.json', JSON.stringify({ movie, cast : top20cast, seasons, reviews }, null, 4), err => { if (err) { console.error(err) } });
 
     await browser.close()
 }

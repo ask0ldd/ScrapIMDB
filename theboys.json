@@ -1,5 +1,6 @@
 {
     "movie": {
+        "title": "The Boys",
         "mediaType": "TV Series",
         "releaseDate": "2019– ",
         "contentRating": "16",
@@ -465,6 +466,148 @@
         "userReviewsPage": "https://www.imdb.com/title/tt1190634/reviews?ref_=tt_urv",
         "episodesPage": "https://www.imdb.com/title/tt1190634/episodes?ref_=tt_eps_sm"
     },
+    "cast": [
+        {
+            "name": " Karl Urban",
+            "personalPage": "https://www.imdb.com/name/nm0881631/?ref_=ttfc_fc_cl_t1",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Billy Butcher",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Jack Quaid",
+            "personalPage": "https://www.imdb.com/name/nm4425051/?ref_=ttfc_fc_cl_t2",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Hughie Campbell",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Antony Starr",
+            "personalPage": "https://www.imdb.com/name/nm1102278/?ref_=ttfc_fc_cl_t3",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Homelander",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Erin Moriarty",
+            "personalPage": "https://www.imdb.com/name/nm3929195/?ref_=ttfc_fc_cl_t4",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Annie January",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Jessie T. Usher",
+            "personalPage": "https://www.imdb.com/name/nm1900772/?ref_=ttfc_fc_cl_t5",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "A-Train",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Laz Alonso",
+            "personalPage": "https://www.imdb.com/name/nm0022306/?ref_=ttfc_fc_cl_t6",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Mother's Milk",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Chace Crawford",
+            "personalPage": "https://www.imdb.com/name/nm2003700/?ref_=ttfc_fc_cl_t7",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "The Deep",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Tomer Capone",
+            "personalPage": "https://www.imdb.com/name/nm6150071/?ref_=ttfc_fc_cl_t8",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Frenchie",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Karen Fukuhara",
+            "personalPage": "https://www.imdb.com/name/nm7232332/?ref_=ttfc_fc_cl_t9",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Kimiko Miyashiro",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Nathan Mitchell",
+            "personalPage": "https://www.imdb.com/name/nm1756121/?ref_=ttfc_fc_cl_t10",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Black Noir",
+            "episodes": "32 episodes, 2019-2022"
+        },
+        {
+            "name": " Colby Minifie",
+            "personalPage": "https://www.imdb.com/name/nm2281371/?ref_=ttfc_fc_cl_t11",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Ashley Barrett",
+            "episodes": "29 episodes, 2019-2022"
+        },
+        {
+            "name": " Dominique McElligott",
+            "personalPage": "https://www.imdb.com/name/nm1069800/?ref_=ttfc_fc_cl_t12",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Maggie Shaw",
+            "episodes": "24 episodes, 2019-2022"
+        },
+        {
+            "name": " Claudia Doumit",
+            "personalPage": "https://www.imdb.com/name/nm4707628/?ref_=ttfc_fc_cl_t13",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Victoria Neuman",
+            "episodes": "21 episodes, 2020-2022"
+        },
+        {
+            "name": " Cameron Crovetti",
+            "personalPage": "https://www.imdb.com/name/nm7805172/?ref_=ttfc_fc_cl_t14",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "Ryan",
+            "episodes": "16 episodes, 2020-2022"
+        },
+        {
+            "name": " Nneka Elliott",
+            "personalPage": "https://www.imdb.com/name/nm6970024/?ref_=ttfc_fc_cl_t15",
+            "portrait": "https://m.media-amazon.com/images/S/sash/N1QWYSqAfSJV62Y.png",
+            "character": "NNC News Anchor",
+            "episodes": "12 episodes, 2019-2022"
+        },
+        {
+            "name": " Laila Robins",
+            "personalPage": "https://www.imdb.com/name/nm0732309/?ref_=ttfc_fc_cl_t16",
+            "portrait": "https://m.media-amazon.com/images/M/MV5BMTY0NzgyNTIxM15BMl5BanBnXkFtZTcwOTUzMDczMw@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+            "character": "Grace Mallory",
+            "episodes": "11 episodes, 2019-2022"
+        },
+        {
+            "name": " Aya Cash",
+            "personalPage": "https://www.imdb.com/name/nm2251731/?ref_=ttfc_fc_cl_t17",
+            "portrait": "https://m.media-amazon.com/images/M/MV5BMzI0YjYyMzgtY2EyZC00M2VhLWI1NTYtNjNiYjkzZTBlODQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+            "character": "Stormfront",
+            "episodes": "10 episodes, 2020-2022"
+        },
+        {
+            "name": " Katy Breier",
+            "personalPage": "https://www.imdb.com/name/nm2068715/?ref_=ttfc_fc_cl_t18",
+            "portrait": "https://m.media-amazon.com/images/M/MV5BOGY2OTE5MzgtZTUyYS00MWJmLTg4NGItNmUyNWQ5YjRkZjE2XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY44_CR0,0,32,44_AL_.jpg",
+            "character": "Cassandra",
+            "episodes": "10 episodes, 2020-2022"
+        },
+        {
+            "name": " Giancarlo Esposito",
+            "personalPage": "https://www.imdb.com/name/nm0002064/?ref_=ttfc_fc_cl_t19",
+            "portrait": "https://m.media-amazon.com/images/M/MV5BMjEyODM1NjI0OF5BMl5BanBnXkFtZTcwMTE0OTA1Mg@@._V1_UX32_CR0,0,32,44_AL_.jpg",
+            "character": "Stan Edgar",
+            "episodes": "10 episodes, 2019-2022"
+        },
+        {
+            "name": " Elisabeth Shue",
+            "personalPage": "https://www.imdb.com/name/nm0000223/?ref_=ttfc_fc_cl_t20",
+            "portrait": "https://m.media-amazon.com/images/M/MV5BOWFkZTIxN2ItODhlOC00MDMwLWEyYTEtZWMxNWQ2MzU3ZjZmXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UY44_CR6,0,32,44_AL_.jpg",
+            "character": "Madelyn Stillwell",
+            "episodes": "9 episodes, 2019-2020"
+        }
+    ],
     "seasons": [
         [
             {
@@ -664,5 +807,182 @@
                 "rating": "8.2/10 (17K)"
             }
         ]
+    ],
+    "reviews": [
+        {
+            "title": " My Antidote to Marvel and Co.\n",
+            "rating": "9",
+            "review": "Having being all superheroed out with the never ending train of films this is so much welcome relief. It's not for kids and I love the choice language which is appropriate.",
+            "user": "iGlad",
+            "date": "26 July 2019"
+        },
+        {
+            "title": " It's exactly the opposite of your usual superhero show!\n",
+            "rating": "9",
+            "review": "I've had big expectations about this show, because I thought that is going to be exactly that kind of show, in which the good guys (the superheroes) fight the bad guys (the villains) and of course, they win. I couldn't have been more wrong, especially because \"The Boys\" it's not about a desperate attempt of superheroes to save the world from evil, instead this show takes a much more realistic approach, about what is going to happen if superheroes had really existed.I'm saying that I had big expectations in the beginning, because I thought that it would be the same usual show with superheroes and villain, that is most likely to find everywhere. In the first couple of episodes I've been a little bit disappointed, or rather shocked, because like I've already said, \"The Boys\" describes what the MCU never did. Of course, the movies and shows from Marvel are destined to other public's category, but this show is tough. It has all you could not expect from a TV series with superheroes. It has violence, gore, nudity, astonishing CGI effects and a very unpredictable and solid storyline. In the end it seems that this one delivered what I didn't expect it to and I am pleased with that. The show is definitely worth watching.",
+            "user": "ciobanualin-94020",
+            "date": "6 December 2021"
+        },
+        {
+            "title": " A superior 'Superhero' series\n",
+            "rating": "9",
+            "review": "This Amazon series is set in a world where there are superheroes; they aren't typical superheroes though; they work for the powerful Vought Corporation and consider ratings and profit to be more important than saving lives. They are also arrogant, disillusioned or generally unpleasant. The worst of these are 'The Seven', the most senior heroes who are heavily marketed by Vought. Working to expose them is a group known as 'The Boys'; led by Billy Butcher who is convinced that leader of the heroes, Homelander, is responsible for the disappearance of his wife. We are introduced to each group via new members; Hughie Campbell joins The Boys after ultrafast hero A-Train ran through his girlfriend; and Annie January an idealistic young heroine known as Starlight who joins The Seven. Hughie and Annie become friends before learning what the other is doing.When I first heard of this I thought it was just a case of Amazon jumping on the superhero bandwagon but then heard a radio review which made it sound like a series I might like... it most certainly is! If you like your heroes to be heroic and good rather than self-centred egomaniacs you might not like this but if you like to see conventions turned on their head this is great. Another major difference between this and more typical stories featuring superheroes is that this is definitely not family friendly; there is a lot of strong violence, some sex and nudity and possibly the most swearing I've heard in a TV show. The story develops well over the two seasons that are currently available with some good twists and plenty of interesting character development. The characters on both sides are interesting and the cast does a great job portraying them. While the story can be a bit dark at times it is lightened by its humour; often being genuinely hilarious as we see events that wouldn't seem the most obvious source of laughs. Overall I'd definitely recommend this to older superhero fans who are looking for something different. I can't wait for season three.",
+            "user": "Tweekums",
+            "date": "22 October 2020"
+        },
+        {
+            "title": " Awesome!\n",
+            "rating": "10",
+            "review": "There's nothing more that I can really say about The Boys that hasn't already been said. It's just a flat out awesome show! It's easily become one of my favorite new shows in years! I binged the entire first two seasons in just a few days when they first came out and rewatched them again for the second time before Season 3 came out. I was expecting a little bit of a drop off for Season 3 because Season 1 and 2 were so great, and there is a little drop in quality but it's still a very good show! It takes everything you loved about Season 1 and 2 (the violence, humor, heart, craziness, character development, etc.) and takes it all to a whole new level! This show has such an original take on the Superhero genre that is both exciting and hilarious! I can not recommend this show enough! Just a warning though...once you start watching it it's hard to stop. Give yourself enough time because you'll want to binge it as quickly as possible!",
+            "user": "Supermanfan-13",
+            "date": "28 August 2022"
+        },
+        {
+            "title": " Amazon pulled off a \"Netflix\" spectacularly !\n",
+            "rating": "9",
+            "review": "Around the world we have a global obsession of superhero comic characters even though they are not real, the billion dollar industry about them. Would you even imagine the franchise we would have to endure if they came into real life! This franchise would become The One quite easily. Here comes this The Boys !Easily might become the greatest first season of A Superhero TV show ever, competing with Marvels Daredevil ofcourse. But this scrip is so freaking impressive, the over the top violence and gore along with great dialogues and brilliant acting easily brings it to the top. i would be really surprised if the two KIWI lead protagonists, Kurl Urban and Anthony Starr wouldn't get nominated for best actors in a leading role, specially Starr. He was absolutely brilliant as the lead antagonist Homelander. That says something for a superhero movie, wouldn't you say !Was waiting patiently for this show, and living up to that hype was not easy. Had to binge it at once, it's that addictive. Wow! Before even release, Amazon Prime ordered a second season even though the production cost might have been astronomical I would imagine. They were that confident, this was that good. Watch it, you'll enjoy !!",
+            "user": "frasif00",
+            "date": "27 July 2019"
+        },
+        {
+            "title": " About time\n",
+            "rating": "10",
+            "review": "With all these awful shows like supergirl and legends of tomorrow etc..The Boys is the perfect antidote to that insipid moralistic tripe that's spewed our TVs so thank you Amazon Prime for treating us like adults and I can't wait for the second season",
+            "user": "nuddywizz",
+            "date": "1 August 2019"
+        },
+        {
+            "title": " Violence, depth and American values right in your face!!\n",
+            "rating": "10",
+            "review": "I'm a huge Legion fan because of the way they did things - The Boys landed like a punch to the face, its dark, its funny (that dolphin scene!) and most of all its one of the most entertaining shows I've seen lately... every character is developed to perfection and if you don't end up hating/loving Antony Starr for his superb interpretation of Homelander then you missed the whole point! A definite must watch - that would definitely be our world with supes!!They dwell on topics such as sexual harrasment, drug abuse, collateral damage and co-dependence like no one else is doing on TV - congrats Amazon and cast!",
+            "user": "mcampuzano88",
+            "date": "15 August 2019"
+        },
+        {
+            "title": " Ba-na-na-na-na-na-na-na-nannas!\n",
+            "rating": "10",
+            "review": "EXCELLENT first season.Incredibly, an even better second season.",
+            "user": "Her-Excellency",
+            "date": "15 October 2020"
+        },
+        {
+            "title": " Big things for Homelander\n",
+            "rating": "9",
+            "review": "Can't say I recall seeing Anthony Star in any films (and I'm an Aussie) but his performance as Homelander is really something else - someone give him an award. Can't wait for next season, and more projects with Star.",
+            "user": "gemfesty",
+            "date": "28 October 2019"
+        },
+        {
+            "title": " Highly original and entertaining\n",
+            "rating": "8",
+            "review": "(Review updated after Season 3).Hughie Campbell's life is turned upside down when the love of his life is accidentally killed by a superhero, a member of The Seven, the most elite and adored of superhero teams. The Seven are the rock stars of the age and untouchable but the more Hughie investigates, the more he discovers they're far from perfect. His moral crusade sees him drawn into a band of anti-superhero vigilantes: The Boys.I'm generally not into superhero movies or series but this is different. Here the superheroes are more the villains than the heroes, making for a very interesting and original take on the genre. Throw in some very intriguing sub-plots involving the superheroes' private lives, the politics of their jobs and machinations within their team plus some profound observations and themes involving the (forced) superficiality of public figures, the intrusiveness and control of the media and the influence of social media status and you have a series that is original, entertaining and a mirror of the times.Action scenes are well done, with some great CGI and graphic grittiness - this is definitely not Disney! While mostly a drama there's some wonderfully funny moments too. Just about anything involving The Deep was always bound to raise a laugh.Not perfect though. The central plot - The Boys vs the superheroes - often appears clumsy and seems to go around in circles. It starts well enough but after a point, towards the end of Season 1, it just seems to get bogged down in endless escapades that have no point and occur based on the flimsiest of excuses. Plus these escapades often got resolved in silly, plot hole-riddled ways.The writers would have done better to initially concentrate on the internal machinations within The Seven with the superheroes vs The Boys plot starting as a sideshow and then amping it up as the series went on.Things do come together quite well in Season 3 though as the plot finds its focus. Season 3 is action-packed and intriguing with some great internal machinations within the superhero camp and a very interesting new character. It was heading for a fantastic showdown but the writers fluffed this somewhat in an effort to prolong the series. The final episode of S3 is a bit confusing and disappointing.All in all, it's highly entertaining viewing.Season ratings: S1&2 8/10, S3 9/10.",
+            "user": "grantss",
+            "date": "17 November 2020"
+        },
+        {
+            "title": " Just... Wow. Dark, funny and gripping.\n",
+            "rating": "10",
+            "review": "Just finished watching the four first episodes. The pilot has to be one of greatest pilots I've ever seen. It has everything and I was hooked immideately. And it keeps getting better. I didn't know I needed this. It's really bold and a fresh wind for TV.",
+            "user": "toxicity-79054",
+            "date": "26 July 2019"
+        },
+        {
+            "title": " Unexpected\n",
+            "rating": "10",
+            "review": "Excellent dystopian reimagining for Superhero nerds. Surprising, violent, always twisting. Binge-watched in 2 days! So glad for a second season, though will be so impatient! Thumbs up.",
+            "user": "g-f-dean",
+            "date": "26 July 2019"
+        },
+        {
+            "title": " Excellent!!\n",
+            "rating": "10",
+            "review": "The Boys is one of the best Superhero shows I've ever seen. While Season 1 was the best season of the series, Season 2 and 3 were also both very good and absolutely worth watching. Season 3 was fantastic, Jensen Ackles was the perfect actor to add to this already incredible show! This show continues to amaze as it's not afraid to try new things and is a show that is definitely for adults. It has no problems being offensive and making you feel squeamish. You don't even have to be a fan of superhero shows to enjoy this. It's violent, funny, thrilling, etc.. Everything you want in a good superhero show. Season 4 just added Jeffrey Dean Morgan to the cast. Another great addition to an already incredible cast. I don't know what else I can say except I absolutely love this series and can't wait for more to come!",
+            "user": "DiCaprioFan13",
+            "date": "11 October 2022"
+        },
+        {
+            "title": " What a treat!\n",
+            "rating": "9",
+            "review": "Review of Season One:This was a real treat and by far my favourite superhero show. An out-and-out satire of modern America, taking broad swipes at consumerism, celebrity, religion, politics, big business, big pharma, you name it. Very well acted (Karl Urban gets the role of his career) and with every episode packed with twists, good characters, action, bloodshed, you name it. I bingewatch this and loved it.Review of Season Two:I was worried this one wouldn't match the first but it did. The story expands, the action and mayhem is ramped up, the new characters leave a real impression, and all of the good stuff from the first season is back. Looking forward to the third...Review of Season Three:I was a little worried about this third season when it first started. It felt like the freshness was gone to be replaced by the crudity and forced outrageousness that marred PREACHER. However, after a few episodes this finds its feet with the introduction of a great new character, some strong acting and all of the twists and political intrigue we know and love.",
+            "user": "Leofwine_draca",
+            "date": "24 April 2022"
+        },
+        {
+            "title": " I can't stand comicbooks/superheroes...\n",
+            "rating": "10",
+            "review": "I can't stand Marvel and DC and all the comic book stuff, (Deadpool and Guardians I will watch) BUT THIS IS DIFFERENT!Imagine a superhero world that was real, none of this nicey nicey holier than thou rubbish, where the only person doing anything wrong is some crazy genius super villain (for those that have seen it, I meant to put that lol), it's what humans are like, with all their neurosis, prejudices and proclivities but with powers.Honestly I didn't think I was going to like it until the scene where we met A-Train (no spoilers) but I ended up binge watching it ALL over a lazy weekend with a few bevvys and I can honestly say....Thia is one of the best shows around, best show since Game of Thrones.You'll love characters, then hate them and the opposite, there's all the grey area that is needed with character development.Plus the fact it looks brilliant, the effects are stunning. Welll directed, well filmed, honestly the DOP on this needs some recognition...So if you don't like super hero stuff (especially the happy Disney ending type stuff) then this is for you and if you do like super hero stuff you'll still like it, I couldn't recommend this more!10/10.",
+            "user": "fingazmc",
+            "date": "10 September 2022"
+        },
+        {
+            "title": " Yeah More Like This Please\n",
+            "rating": "9",
+            "review": "Truly an antidote to Marvel and Co.Having American super heroes forced down our throats 24/7 is so tiring. But out of nowhere comes this gem of a show, which shows us the grimy under belly of being a super hero and its great and liberating, and maybe we can all rethink the role of America in the world.So yes this is a relief from the never ending train of films this is so much welcome relief. It's not for kids and I love the choice language which is appropriate.The only reason why I changed it from 10 to 9 is because of Kripke's over fascination with Jensen Ackles - please can someone stop him from taking all his Supernatural cast and placing them in this production.",
+            "user": "extraplay-61838",
+            "date": "17 October 2022"
+        },
+        {
+            "title": " You think you know the Super Heroes are very much mistaken!\n",
+            "rating": "10",
+            "review": "Forget the ethics, the quest for justice, the hearts of gold filled with good intentions: The superheroes of The Boys went far from what the public got used to seeing in the Marvel and DC movies.\nMay the second season come.",
+            "user": "dcristina_moura",
+            "date": "20 July 2019"
+        },
+        {
+            "title": " What more could you ask for from a show?\n",
+            "rating": "10",
+            "review": "Outrageously fun. Outrageously funny. Outrageously gross. Just outrageous. And the best use of the C word since Deadwood. A superb cast led by Karl Urban in a show with that Seth Rogen sensibility, The Boys turns the superhero genre on it's head. There is something here for everybody. Action. Comedy. Great special effects. Over the top violence. Even drama and a dark commentary on what society would really do if it had superheroes. And, unlike a lot of shows, The Boys doesn't lag in its following seasons. If anything it gets better. Watching this show is not an effort. It's a pleasure. It's an addiction. Yes, I'm saying it's that good. Why should you watch this show? Just start watching, and within the very first few seconds you'll want to see more. It's everything a show should be. And there's Karl Urban's use of the C word. Must be seen to be understood, but he does it as well and as often as Al in Deadwood. And that's saying a lot!",
+            "user": "julesfdelorme",
+            "date": "29 September 2022"
+        },
+        {
+            "title": " The best superhero content coming out right now, aside from Invincible\n",
+            "rating": "8",
+            "review": "Season 1 - 10/10\nSeason 2 - 7/10\nSeason 3 - 8/10.This show is simply glorious. The action is brutal and awesome, pretty much all of the characters are well written, and, much to my surprise, the show is actually really funny. I think season 1 is basically perfect, season 2 is a bit of a mess but I still enjoyed it, and season 3 is really good. The one major complaint I have across all three seasons though is that the commentary on corporations is hypocritical coming from Amazon, but that's not the writers' faults. I also want to mention the acting. It's great all around, but Karl Urban in particular is just fantastic. I think Billy Butcher might be the best role of his career.",
+            "user": "roaches_97",
+            "date": "22 September 2022"
+        },
+        {
+            "title": " SEASON 3!\n",
+            "rating": "9",
+            "review": "Now I admit I will be in the minority, but I didn't really like season 2 of the boys. After an excellent season 1. 2 was a stepback. Sure there was a larger scale. But the slow pace, so many flashbacks, so many side stories that divert from the main story. I lost my interest in the season. Only 3, 6 and 8 were the good ones in season 2Season 1- 9/10\nSeason 2- 7.5/10Now let's talk about season 3. What a return back to form. Crazy from the minute go. More violent, intense and gripping than seasons 1 and 2. The addition of the V24 and Jensen Ackles as soldier boy just adds to the fun. Although Ackles enters late, he takes the spotlight the minute he entersNow, the character development is the most interesting this season. Homelander is crazier than ever. Butcher and Hughie go down a dark path. Starlight taking a huge step against Vought (really, she had enough of them). The deep coming back into the game. A-Train coming to the realization what's it like to watch one's own get hurt. MM's past with soldier boy. Really interesting developmentBelow are the episodes in season 3 I found best to worst. There is no episode I found bad, it's just the ranking I found them most interestingHerogasm (without a doubt, the best episode)Glorious five year planThe instant white hot wild (yeah, a bit rushed, but definitely not bad as everyone says it is)The only man in the sky (the ending of this episode, Oh My God!)The last time to look on this world of liesHere comes a candle to light you to bedBarbary coastPaybackComing to the performances. Antony Starr went to another level this time. This guy really deserves an emmy for this role. Karl Urban, as delicious as ever, bringing his unique style of saying sarcastic lines. Amazing. Jack Quaid got some really good scenes to shine this season and he did. Erin Moriarty proved why she will always remain the best choice to play starlight. Laz Alonso had the emotional part this season, I think he handled it well.Always lovely to hear Tomer Capon's French in every season. He doesn't disappoint. Karen Fukuhara really dominates the action scenes. She's a boss! Ackles's Soldier Boy appears late and takes the center stage in the second half. His deep voice really supports in making us believe that he is a force to be reckoned with. Cameron Covetti doesn't get much to do except the last episode. Same goes for Chace Crawford. Jessie T Usher didn't get much screen time to perform what he had to. Others do well in their partsSo. Final word, I thought season 2 was bad and it got me to lost interest in the boys and wasn't really excited to watch season 3 but I decided to give it a try and thank god I did. Just amazing. Without a doubt, the best season for me out of the trioSeason 3- 9.5/10.",
+            "user": "AT112001",
+            "date": "6 September 2022"
+        },
+        {
+            "title": " I Agree\n",
+            "rating": "10",
+            "review": "Glad I decided to watch it.It's beautiful, and indeed, if humans had superpowers, something like this would happen.",
+            "user": "jack_o_hasanov_imdb",
+            "date": "9 August 2021"
+        },
+        {
+            "title": " Amazing\n",
+            "rating": "10",
+            "review": "This show obviously deserves all the praise.also I think marketing team was slow to advertise this one it such a amazing show everyone should give a chance to this series.",
+            "user": "krunalpatel11127",
+            "date": "26 July 2019"
+        },
+        {
+            "title": " The Fly\n",
+            "rating": "",
+            "review": "Has anyone else noticed the fly that Butcher keeps swatting away in at least 3 different episodes?Its so slight it seems incidental, but I bet its not. Best guess it's a very small character that has big meaning later in the show.Enjoy.",
+            "user": "jaymeebla",
+            "date": "27 July 2019"
+        },
+        {
+            "title": " A show catered specifically for me :)\n",
+            "rating": "10",
+            "review": "Season 1: 10 stars (3 viewings, 1/5/20, 9/2/2020, 5/22/2022)I love this show a lot. I treasure the concept. The characters are fantastic. The humor is extreme. The cast is awesome. NUMEROUS memorable moments. Multiple great emotional moments. Several uncomfortably intense scenes. \"Adore\" really is the best way to describe how I feel about this show. Its only flaw is that the fight scenes are bad with lots of quick cuts and shaky-cam close-ups.Season 2: 10 stars (2 viewings, 10/9/2020, 5/29/2022)Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Everyone involved in making this show, you are so amazing, I love you all. Keep up the good work, and THANK YOU.Season 3: 10 stars (2 viewings, 7/7/2022, 7/19/2022)I don't even know what to say. No point in listing out what I like. It's everything. It has 2 of my all-time favorite episodes (episodes 2 and 6). Best first 3 seasons of any show ever. Again, THANK YOU.",
+            "user": "FeastMode",
+            "date": "7 January 2020"
+        },
+        {
+            "title": " A Super Series\n",
+            "rating": "10",
+            "review": "When I first heard of 'The Boys', I thought it would be your standard superhero series, but when I actually watched it, I discovered I was dead wrong. After 15 minutes of the first episode, it was impossible to stop watching. It was a more believable take on what the world would look like if superheroes were flying around today, with characters that were unforgettably unique. There were times when I thought that the 'good guys' were the 'bad guys', and times when I thought the 'bad guys' were the 'good guys'. But in the end, I found that there weren't any 'all-good' or 'all-bad' characters, but 'all-human' characters, sometimes with more-than-human abilities.\nIt's a super series, definitely worth your time.",
+            "user": "scorpionfangpire",
+            "date": "30 July 2019"
+        }
     ]
 }
