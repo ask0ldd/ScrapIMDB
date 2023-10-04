@@ -22,6 +22,7 @@ async function run (){
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0')
 
     const tvshowUrl = 'https://www.imdb.com/title/tt1190634/'
+    // const tvshowUrl = 'https://www.imdb.com/title/tt0137523/'
     await page.goto(tvshowUrl)
 
     // scrolls to make the storyline text appear
@@ -163,6 +164,23 @@ async function run (){
         page.click('div[aria-label="Next"]')
         await page.waitForTimeout(1000)
     }
+
+    // review page
+    await page.goto(movie.userReviewsPage)
+    await page.evaluate('window.scrollTo(0, 8000)')
+    await page.waitForFunction(`document.body.scrollHeight > 7000`)
+    await page.waitForTimeout(3000)
+
+    const review = await page.evaluate(() => Array.from(document.querySelectorAll('.review-container'), () => {
+        return {
+            title : ,
+            rating : ,
+            review : ,
+            user : ,
+            date : ,
+        }
+    })
+    )
 
     // writes the movies datas as a formatted json file
     fs.writeFile('theboys.json', JSON.stringify({ movie : movie, seasons : seasons }, null, 4), err => { if (err) { console.error(err) } });
