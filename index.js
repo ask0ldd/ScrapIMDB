@@ -1,5 +1,6 @@
 const puppeeter = require('puppeteer')
-const fs = require('fs');
+const fs = require('fs')
+const MovieScraper = require('./movieScraper.js')
 
 async function getMediaDatas(mediaUrl, maxPics, maxCastMembers){
 
@@ -30,13 +31,13 @@ async function run (){
 
     // await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
     // retrieves all the mains datas from the movie page
-    const movie = await page.evaluate((movieScraper) => {
+    const movie = await page.evaluate(() => {
         const [mediaType, releaseDate, contentRating, duration] = Array.from(document.querySelector('h1')?.nextElementSibling?.querySelectorAll('li'), li => {
             return li.querySelector('a') == null ? li.textContent : li.querySelector('a')?.textContent
         })
 
         return {
-            title : movieScraper.getTitle(),
+            title : document.querySelector('h1 span')?.textContent || "",
             mediaType,
             releaseDate,
             contentRating,
@@ -67,7 +68,7 @@ async function run (){
             userReviewsPage : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
             episodesPage : document.querySelector('section[data-testid="Episodes"] a')?.href || ''
         }
-    }, MovieScraper)
+    })
 
     await page.goto(movie.castListPage)
     await page.evaluate('window.scrollTo(0, 2000)')
@@ -176,21 +177,3 @@ run()
 // console.log(JSON.stringify(nSeasons))
 // console.log(JSON.stringify(top20cast))
 // console.log(movie.storyline)
-
-class MovieScraper {
-
-    static getTitle(){
-        return document.querySelector('h1 span')?.textContent || ""
-    }
-
-    static getTest(){
-        return 5
-    }
-}
-
-/*const movieScraper = {
-    getTitle : () => { return document.querySelector('h1 span')?.textContent },
-    getPoster : () => document.querySelector('div[data-testid="hero-media__poster"] img')?.src || '',
-    getGenres : () => Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent) || [],
-    test : 5,
-}*/
