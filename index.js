@@ -16,7 +16,7 @@ async function run (){
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0')
 
     const tvshowUrl = 'https://www.imdb.com/title/tt1190634/'
-    const photoGalleryUrl = 'https://www.imdb.com/title/tt1190634/mediaviewer'
+    const photoGalleryUrl = 'https://www.imdb.com/title/tt1190634/mediaviewer/'
     await page.goto(tvshowUrl)
 
     // const html = await page.content()
@@ -137,13 +137,19 @@ async function run (){
     await page.goto(photoGalleryUrl)
     /*await page.evaluate('window.scrollTo(0, 2000)')
     await page.waitForFunction(`document.body.scrollHeight > 1800`)*/
+    page.click('div[aria-label="Next"]')
     await page.waitForTimeout(2000)
 
     // const nextButton = await page.evaluate(() => document.querySelector('div[aria-label="Next"]'))
-    
     for(let i=0; i<12; i++){
-        const imgSrc = await page.evaluate(() => document.querySelector('div[data-testid="media-viewer"] img')?.src)
-        movie.photos[i] = {...movie.photos[i], fullPicUrl : imgSrc}
+        const imgSrc = await page.evaluate(() => document.querySelector('div[data-testid="media-viewer"] img')?.srcset)
+        // console.log(i, ' : ', imgSrc)
+        const urlnWidth = imgSrc.split(', ')
+        const fullPics = Array.from(urlnWidth, el => {
+            const [url, width] = el.split(' ')
+            return {url, width : width.slice(0, -1)}
+        })
+        movie.photos[i] = {...movie.photos[i], fullPics : fullPics}
         page.click('div[aria-label="Next"]')
         await page.waitForTimeout(1000)
     }
