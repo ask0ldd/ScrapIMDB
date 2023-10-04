@@ -1,6 +1,10 @@
 const puppeeter = require('puppeteer')
 const fs = require('fs');
 
+async function getMediaDatas(mediaUrl, maxPics, maxCastMembers){
+
+}
+
 async function run (){
     const browser = await puppeeter.launch()
     const page = await browser.newPage()
@@ -28,8 +32,15 @@ async function run (){
 
     // retrieves all the mains datas from the movie page
     const movie = await page.evaluate(() => {
+        const [mediaType, releaseDate, contentRating, duration] = Array.from(document.querySelector('h1')?.nextElementSibling?.querySelectorAll('li'), li => {
+            return li.querySelector('a') == null ? li.textContent : li.querySelector('a')?.textContent
+        })
         return {
             title : document.querySelector('h1 span')?.textContent || "",
+            mediaType,
+            releaseDate,
+            contentRating,
+            duration,
             poster : document.querySelector('div[data-testid="hero-media__poster"] img')?.src || '',
             genres : Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent) || [],
             rating : document.querySelector('div[data-testid="hero-rating-bar__aggregate-rating__score"] span')?.textContent || '',

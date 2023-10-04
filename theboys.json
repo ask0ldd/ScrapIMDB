@@ -1,22 +1,20 @@
 {
     "movie": {
         "title": "The Boys",
+        "mediaType": "TV Series",
+        "releaseDate": "2019– ",
+        "contentRating": "16",
+        "duration": "1h",
         "poster": "https://m.media-amazon.com/images/M/MV5BZTg2MTU4NjAtYzc3ZS00ZDJhLWE3ZjktYThkNTYwZDdlYmI4XkEyXkFqcGdeQXVyNjMxMTE2Mjg@._V1_QL75_UY281_CR11,0,190,281_.jpg",
         "genres": [
             "Action",
             "Comedy",
-            "Crime",
-            "violence",
-            "gore",
-            "blood",
-            "enhancement drug",
-            "corporate marketing",
-            "69 more"
+            "Crime"
         ],
         "rating": "8.7",
         "plot": "A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.",
         "episodes": "32",
-        "storyline": "\"The Boys\" is set in a universe in which superpowered people are recognized as heroes by the general public and owned by a powerful corporation, Vought International, which ensures that they are aggressively marketed and monetized. Outside of their heroic personas, most are arrogant and corrupt. The series primarily focuses on two groups: the titular Boys, vigilantes looking to keep the corrupted heroes under control, and the Seven, Vought International's premier superhero team. The Boys are led by Billy Butcher, who despises all superpowered people, and the Seven are led by the egotistical and unstable Homelander. As a conflict ensues between the two groups, the series also follows the new members of each team: Hugh \"Hughie\" Campbell of the Boys, who joins the vigilantes after his girlfriend is killed in a high-speed collision by the Seven's A-Train, and Annie January/Starlight of the Seven, a hopeful young heroine forced to face the truth about the heroes she admires.",
+        "storyline": "",
         "creator": "Eric Kripke",
         "castListPage": "https://www.imdb.com/title/tt1190634/fullcredits/writer?ref_=tt_ov_wr_sm",
         "photos": [
