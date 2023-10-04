@@ -6,7 +6,7 @@ async function run (){
     const page = await browser.newPage()
     page.setViewport({ width: 1440, height: 926 })
     
-    // fake user agent
+    // fake user agent definition
     await page.evaluateOnNewDocument(() => {
         Object.defineProperties(navigator, 'platform', {get : () => 'win32'})
         Object.defineProperties(navigator, 'productSub', {get : () => '20100101'})
@@ -19,13 +19,14 @@ async function run (){
     const photoGalleryUrl = 'https://www.imdb.com/title/tt1190634/mediaviewer/'
     await page.goto(tvshowUrl)
 
-    // const html = await page.content()
-    // scroll to make the storyline text appear
+    // scrolls to make the storyline text appear
     await page.evaluate('window.scrollTo(0, 8000)')
     await page.waitForFunction(`document.body.scrollHeight > 7000`)
     await page.waitForTimeout(2000)
+
     // await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
 
+    // retrieves all the mains datas from the movie page
     const movie = await page.evaluate(() => {
         return {
             title : document.querySelector('h1 span')?.textContent || "",
@@ -43,7 +44,7 @@ async function run (){
                 alt : node?.alt || '',
                 mediaViewerPage : node.parentElement?.nextSibling?.href || '',
             })
-            ) || [], // needs a href too
+            ) || [],
             relatedContent : Array.from(document.querySelectorAll('section[data-testid="MoreLikeThis"] div[data-testid="shoveler-items-container"]>div'), node => 
                 ({
                     title: node.querySelector('span[data-testid="title"]')?.textContent || '', 
@@ -86,16 +87,12 @@ async function run (){
         }
     )
 
-    // await page.screenshot({path : 'screenshots/theboys2.png', fullPage : true})
-
     await page.goto(movie.episodesPage)
     await page.evaluate('window.scrollTo(0, 2000)')
     await page.waitForFunction(`document.body.scrollHeight > 1800`)
     await page.waitForTimeout(2000)
 
-    // await page.screenshot({path : 'screenshots/theboys3.png', fullPage : true})
-
-    // retrieve season 1 and the number of seasons broadcasted or announced by the channel
+    // retrieves season 1 and the number of seasons broadcasted or announced by the channel
     const { seasons, nSeasons } = await page.evaluate(() => {
         return { 
             seasons : [ Array.from(document.querySelectorAll('article.episode-item-wrapper'), rowNode => (
@@ -111,7 +108,7 @@ async function run (){
         }
     })
 
-    // if more than one seasons, retrieve datas for all of them
+    // if more than one seasons, retrieves datas for the subsequent ones
     if(nSeasons > 1)
     for(let i = 2; i<=nSeasons; i++){
         await page.goto(tvshowUrl + 'episodes/?season='+i)
@@ -131,39 +128,41 @@ async function run (){
         )
     }
 
-    // get rid of last season if not broadcasted yet
+    // gets rid of last season if not broadcasted yet
     if(seasons[seasons.length-1][0].plot === "") seasons.pop()
 
+    // go to the gallery page
     await page.goto(photoGalleryUrl)
-    /*await page.evaluate('window.scrollTo(0, 2000)')
-    await page.waitForFunction(`document.body.scrollHeight > 1800`)*/
     page.click('div[aria-label="Next"]')
     await page.waitForTimeout(2000)
 
-    // const nextButton = await page.evaluate(() => document.querySelector('div[aria-label="Next"]'))
+    // circles through the gallery to get the datas about the first 12 pics
     for(let i=0; i<12; i++){
         const imgSrc = await page.evaluate(() => document.querySelector('div[data-testid="media-viewer"] img')?.srcset)
-        // console.log(i, ' : ', imgSrc)
+
+        // converts the srcset string into an array
         const urlnWidth = imgSrc.split(', ')
         const fullPics = Array.from(urlnWidth, el => {
             const [url, width] = el.split(' ')
             return {url, width : width.slice(0, -1)}
         })
+
         movie.photos[i] = {...movie.photos[i], fullPics : fullPics}
         page.click('div[aria-label="Next"]')
         await page.waitForTimeout(1000)
     }
 
-    // console.log(JSON.stringify(movie))
-    // console.log(JSON.stringify(seasons))
-    // console.log(JSON.stringify(nSeasons))
-    // console.log(JSON.stringify(top20cast))
-    // console.log(movie.storyline)
-
-    // write the formatted json
+    // writes the movies datas as a formatted json file
     fs.writeFile('theboys.json', JSON.stringify({ movie : movie, seasons : seasons }, null, 4), err => { if (err) { console.error(err) } });
 
     await browser.close()
 }
 
 run()
+
+
+// console.log(JSON.stringify(movie))
+// console.log(JSON.stringify(seasons))
+// console.log(JSON.stringify(nSeasons))
+// console.log(JSON.stringify(top20cast))
+// console.log(movie.storyline)
