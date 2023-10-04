@@ -183,7 +183,7 @@ async function run (){
     )
 
     // writes the movies datas as a formatted json file
-    fs.writeFile('theboys.json', JSON.stringify({ movie, cast : top20cast, seasons, reviews }, null, 4), err => { if (err) { console.error(err) } });
+    fs.writeFile('theboys.json', JSON.stringify({ movie, cast : top20cast, seasons, reviews : reviews.slice(0, 9) }, null, 4), err => { if (err) { console.error(err) } });
 
     await browser.close()
 }
