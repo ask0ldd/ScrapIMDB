@@ -6,6 +6,7 @@ async function getMediaDatas(mediaUrl, maxPics, maxCastMembers){
 }
 
 async function run (){
+
     const browser = await puppeeter.launch()
     const page = await browser.newPage()
     page.setViewport({ width: 1440, height: 926 })
@@ -20,23 +21,22 @@ async function run (){
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:73.0) Gecko/20100101 Firefox/73.0')
 
     const tvshowUrl = 'https://www.imdb.com/title/tt1190634/'
-    const photoGalleryUrl = 'https://www.imdb.com/title/tt1190634/mediaviewer/'
     await page.goto(tvshowUrl)
 
     // scrolls to make the storyline text appear
     await page.evaluate('window.scrollTo(0, 8000)')
     await page.waitForFunction(`document.body.scrollHeight > 7000`)
-    await page.waitForTimeout(2000)
+    await page.waitForTimeout(3000)
 
     // await page.screenshot({path : 'screenshots/theboys.png', fullPage : true}) // can use page.pdf too
-
     // retrieves all the mains datas from the movie page
-    const movie = await page.evaluate(() => {
+    const movie = await page.evaluate((movieScraper) => {
         const [mediaType, releaseDate, contentRating, duration] = Array.from(document.querySelector('h1')?.nextElementSibling?.querySelectorAll('li'), li => {
             return li.querySelector('a') == null ? li.textContent : li.querySelector('a')?.textContent
         })
+
         return {
-            title : document.querySelector('h1 span')?.textContent || "",
+            title : movieScraper.getTitle(),
             mediaType,
             releaseDate,
             contentRating,
@@ -67,7 +67,7 @@ async function run (){
             userReviewsPage : document.querySelector('section[data-testid="UserReviews"] a.ipc-title-link-wrapper')?.href || '',
             episodesPage : document.querySelector('section[data-testid="Episodes"] a')?.href || ''
         }
-    })
+    }, MovieScraper)
 
     await page.goto(movie.castListPage)
     await page.evaluate('window.scrollTo(0, 2000)')
@@ -143,7 +143,7 @@ async function run (){
     if(seasons[seasons.length-1][0].plot === "") seasons.pop()
 
     // go to the gallery page
-    await page.goto(photoGalleryUrl)
+    await page.goto(tvshowUrl + 'mediaviewer/')
     page.click('div[aria-label="Next"]')
     await page.waitForTimeout(2000)
 
@@ -171,9 +171,26 @@ async function run (){
 
 run()
 
-
 // console.log(JSON.stringify(movie))
 // console.log(JSON.stringify(seasons))
 // console.log(JSON.stringify(nSeasons))
 // console.log(JSON.stringify(top20cast))
 // console.log(movie.storyline)
+
+class MovieScraper {
+
+    static getTitle(){
+        return document.querySelector('h1 span')?.textContent || ""
+    }
+
+    static getTest(){
+        return 5
+    }
+}
+
+/*const movieScraper = {
+    getTitle : () => { return document.querySelector('h1 span')?.textContent },
+    getPoster : () => document.querySelector('div[data-testid="hero-media__poster"] img')?.src || '',
+    getGenres : () => Array.from(document.querySelectorAll('.ipc-chip-list__scroller .ipc-chip__text'), node => node.textContent) || [],
+    test : 5,
+}*/
