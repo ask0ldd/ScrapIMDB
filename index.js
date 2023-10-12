@@ -146,13 +146,29 @@ async function run (){
 
     // go to the gallery page
     await page.goto(tvshowUrl + 'mediaviewer/')
+    await page.waitForTimeout(2000)
     /*page.click('div[aria-label="Next"]')
     await page.waitForTimeout(2000)*/
 
     // circles through the gallery to get the datas about the first 12 pics
     for(let i=0; i<12; i++){
-        
-        const imgSrc = i === 0 ? await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[0]?.srcset) : await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[1]?.srcset)
+
+        // const imgSrc = i === 0 ? await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[0]?.srcset) : await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[1]?.srcset)
+        /*const imgs = await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img'))
+        let imgSrc
+        console.log(imgs)
+        for(const imgTemp in imgs){
+            // find the image containing curr in it's data-image-id
+            if(imgTemp.getAttribute('data-image-id').includes("curr")) imgSrc = imgTemp.srcset
+        }*/
+
+        const imgSrc = await page.evaluate(() => {
+            let imgSrc
+            document.querySelectorAll('div[data-testid="media-viewer"] img').forEach(img=> {
+                if(img.getAttribute('data-image-id').includes("curr")) imgSrc = img.srcset
+            })
+            return imgSrc
+        })
         
         // converts the srcset string into an array
         const urlnWidth = imgSrc.split(', ')
