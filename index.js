@@ -146,13 +146,14 @@ async function run (){
 
     // go to the gallery page
     await page.goto(tvshowUrl + 'mediaviewer/')
-    page.click('div[aria-label="Next"]')
-    await page.waitForTimeout(2000)
+    /*page.click('div[aria-label="Next"]')
+    await page.waitForTimeout(2000)*/
 
     // circles through the gallery to get the datas about the first 12 pics
     for(let i=0; i<12; i++){
-        const imgSrc = await page.evaluate(() => document.querySelector('div[data-testid="media-viewer"] img')?.srcset)
-
+        
+        const imgSrc = i === 0 ? await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[0]?.srcset) : await page.evaluate(() => document.querySelectorAll('div[data-testid="media-viewer"] img')[1]?.srcset)
+        
         // converts the srcset string into an array
         const urlnWidth = imgSrc.split(', ')
         const fullPics = Array.from(urlnWidth, el => {
