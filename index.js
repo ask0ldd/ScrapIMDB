@@ -173,6 +173,9 @@ async function run (){
         const actors = await page.evaluate(()=> (
             Array.from(document.querySelectorAll('div[data-testid="media-sheet"] div.ipc-html-content-inner-div a'), element => element.innerHTML)
         ))
+
+        // last element is the name of the media and not some actors name
+        actors.pop()
         
         // converts the srcset string into an array
         const urlnWidth = imgSrc.split(', ')
