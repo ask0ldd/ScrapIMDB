@@ -169,6 +169,10 @@ async function run (){
             })
             return imgSrc
         })
+
+        const actors = await page.evaluate(()=> (
+            Array.from(document.querySelectorAll('div[data-testid="media-sheet"] div.ipc-html-content-inner-div a'), element => element.innerHTML)
+        ))
         
         // converts the srcset string into an array
         const urlnWidth = imgSrc.split(', ')
@@ -177,7 +181,7 @@ async function run (){
             return {url, width : width.slice(0, -1)}
         })
 
-        movie.photos[i] = {...movie.photos[i], fullPics : fullPics}
+        movie.photos[i] = {...movie.photos[i], fullPics : fullPics, actors : actors}
         page.click('div[aria-label="Next"]')
         await page.waitForTimeout(1000)
     }
