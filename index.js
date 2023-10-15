@@ -53,7 +53,8 @@ async function run (){
             castListPage : document.querySelector('a[aria-label="See full cast and crew"]')?.href || '',
             photos : Array.from(document.querySelectorAll('section[data-testid="Photos"] div[data-testid="shoveler-items-container"] .ipc-image'), node => 
             ({
-                miniatureUrl : node?.src || '', 
+                miniatureUrl : node?.src || '',
+                id : node?.src.split('/')[5].split('.')[0], 
                 alt : node?.alt || '',
                 mediaViewerPage : node.parentElement?.nextSibling?.href || '',
             })
@@ -171,7 +172,7 @@ async function run (){
         })
 
         const actors = await page.evaluate(()=> (
-            Array.from(document.querySelectorAll('div[data-testid="media-sheet"] div.ipc-html-content-inner-div a'), element => element.innerHTML)
+            Array.from(document.querySelectorAll('div[data-testid="media-sheet"] div.ipc-html-content-inner-div a'), element => (element.innerHTML))
         ))
 
         // last element is the name of the media and not some actors name
